@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dc8b20635a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/kontakt.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Power<span>Gym</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./zajęcia.html">Zajęcia</a>
+                    <a class="nav-link" href="./squash.html">Squash</a>
+                    <a class="nav-link" href="#">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact py-5">
+            <h2><strong>Kontakt</strong></h2>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="contact col">
+                        <h3><strong>Dane Kontaktowe</strong></h3>
+                        <p>Siłownia PowerGym</p>
+                        <p>ul.XYZ</p>
+                        <p>00-000 Sosnowiec</p>
+                        <h3><strong>Telefon:</strong></h3>
+                        <p>000-000-000</p>
+                        <h3><strong>E-mail</strong></h3>
+                        <p>powergym@email.com</p>
+                        <h3><strong>Godziny otwarcia klubu</strong></h3>
+                        <p>Poniedziałek - Piątek: 06:00 - 22:00</p>
+                        <p>Sobota: 08:00 - 18:00</p>
+                        <p>Niedziela: 08:00 - 18:00</p>
+                    </div>
+                    <div class="col-12 col-sm-6 text-center">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Imię i Nazwisko</span>
+                            <input type="text" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" id="basic-addon1">E-mail</span>
+                            <input type="text" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Telefon</span>
+                            <input type="text" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">Twoja wiadomość</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+
+
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <p>Wyślij wiadomość</p>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Wiadomość</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Twoja wiadomość została wysłana</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+    </main>
+
+    <footer class="text-muted">
+        <p>©2022 PowerGym All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,290 @@
+@import "animation";
+@import "colors";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(../images/hero-big.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    z-index: -1;
+}  
+
+
+nav{
+    background-color: $nav-color;
+    line-height: 20px;
+
+}
+
+
+.navbar-brand{
+    font-size: 24px;
+
+    
+    span{
+    color:red;
+    }
+}
+
+.hero-text{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    top: 50%;
+
+    p{  
+    color:white;
+    text-transform: uppercase;
+    font-size: 52px;
+    span{
+        color:red;
+    }
+}
+}
+
+.hero-img{
+    height: 100vh;
+    .tracking-in-contract-bck-bottom{
+        font-size: 20px;
+        color:yellow;
+        
+    }
+}
+
+
+
+.hero-shadow{
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    .fa-solid{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        font-size: 40px;
+        color:red;
+        align-items:end;
+        justify-content: center;
+        padding: 60px;   
+    }
+}
+
+
+
+.info{
+    .background-img{
+    background-image: url(../images/info-background-big.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgba(255,255,255,0.92);
+    
+    }
+
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .row{
+        position: relative;
+    }
+
+    h3 strong{
+        text-transform: uppercase;
+        font-size: 48px;
+    }
+    span{
+        text-transform: uppercase;
+        color:red;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    strong{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+
+
+.tickets{
+    background: rgba(255,255,255,0.92);
+    text-align: center;
+    text-transform: uppercase;
+    .info-tickets{
+        text-align: center;
+        justify-self: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        background-color: black;
+        transform: .3s;
+        p{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-size: 24px;
+            z-index: 1;
+        }
+    }
+}
+
+
+.box-content {
+    position: relative;
+    text-align: center;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .box-front,
+  .box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    .box-back {
+        transform: rotateY(180deg);
+        p{
+            color:yellow;
+        }
+    }
+
+    .box-front{
+        p{
+            color:red;
+        }
+    }
+    
+    
+    .box:hover .box-content {
+      transform: rotateY(180deg);
+    }
+    
+    .gallery{
+        background: rgba(255,255,255,0.92);
+        
+        h3{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .carousel-control-prev-icon{
+            width: 50px;
+            height: 50px;
+           
+        }
+        .carousel-control-next-icon{
+            width: 50px;
+            height: 50px;
+           
+        }
+    
+    }
+
+
+.cards{
+    background: rgba(255,255,255,0.92);
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        strong{
+            text-transform: uppercase;
+        }
+    }
+    img{
+        max-width: 300px;
+        height: 200px;
+    }
+}
+
+.wait{
+    font-size: 40px;
+}
+
+.hours{
+    background:black;
+    h3,p{
+        text-align: center;
+        font-size: 32px;
+        color:yellow;
+    }
+    p{
+        font-size: 24px;
+    }
+    
+}
+
+footer{
+    background: rgba(255,255,255,0.92);
+    text-align: center;
+}
+
+
+
+//hover link(navigation) animation
+.nav-link{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    color: black;
+  }
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.5s ease;
+  }
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  //media
+
+@media (max-width:576px){
+    body{
+        background-image: url(../images/hero-small.jpg);
+    }
+
+
+    }
+
+
+ 
